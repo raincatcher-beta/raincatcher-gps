@@ -1,0 +1,23 @@
+{
+  "name": "fh-wfm-gps",
+  "version": "0.0.1",
+  "description": "A simple GPS Raincatcher module that emits the current location when requested",
+  "main": "lib/angular/gps-ng.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [
+    "raincatcher",
+    "gps",
+    "location"
+  ],
+  "author": "Niall Donnelly",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "fh-wfm-mediator": "0.0.14",
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^18.0.0"
+  }
+}
