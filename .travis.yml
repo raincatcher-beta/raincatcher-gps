@@ -10,7 +10,9 @@ before_install:
 install: npm install
 script:
   - npm test
-  - bash <(curl https://gist.githubusercontent.com/raincatcher-bot/01ac4cdb3b0770bdb58489dbc17ed6b6/raw/6205a628c3616f6736fd866d5f0fba0a781ec1e4/sonarqube.sh)
+  - >-
+    bash <(curl
+    https://gist.githubusercontent.com/raincatcher-bot/01ac4cdb3b0770bdb58489dbc17ed6b6/raw/6205a628c3616f6736fd866d5f0fba0a781ec1e4/sonarqube.sh)
 notifications:
   email: false
   slack:
@@ -20,4 +22,6 @@ notifications:
       secure: >-
         lX4k0NvpjlpspUez/Co2vaSca8ZqgpeYF/onEhQP75F4LIGMz3uY9w6orLZnbU6XwkoKIVW6BxFm8vhnxGxQu3R1QKI7GkbfNUw2tfh7sxdNBN+qvgpT3lUtCPm+u2kZxLGoWKnbPh+1XooIjR+p8JUR1tAIhhZKgx9d/fwFcfxVpj9ZXQbyVQT2RLQEJF6KrWuaYpzfHMVIqoKuv5QdjW7eqzg66lMcojuwk5oYnBUx8QyWHPpzSzRLEGAzO9Zod5OGbfme78/1wyjICO/Yj4GfMZ6Wz6SORVOooRmFTEX+BVQI2NiRAAaZNc5jwTPR1rdaohzk7V9VackJAAp6XGr6ksQuiushXzT/1Qy3MFPqevsFIx6rGm+gbUsuOiRnBs72ZYZGC3xoKx2tkbcCt40ol7GPY3nuu/Aj7Ll3kpLHW7A5oCF0k30FLXT1tmDq8dU5S9vrfDNgNLLY4kcejW5q5YT+Twhl2NWVDac5swC6LP2+QgdFejrKud03N/WhQv5TOgeowS8QVG7UR73zc0ryMRphACcbqdUDbktkrjHGo//CtYqlJ6cqZLHobPF+fKj05lXRLqkrnpHoJogVY8C0hzxQVW6dHRElZi9zq7dv69gWTaRxsMsuee+AQqqbkSbLCEKCjcRQqV6Wz93dnA4a1gfO0a6Ie25M15ZDsGI=
     on_pull_requests: false
-
+cache:
+  directories:
+    - node_modules
