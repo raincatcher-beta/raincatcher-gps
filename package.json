@@ -16,7 +16,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "fh-wfm-mediator": "0.0.14",
+    "fh-wfm-mediator": "0.3.4",
     "grunt": "^1.0.1",
     "grunt-eslint": "^18.0.0"
   }
